@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
-    Hello,World!
-</body>
+	<head>
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body ng-app="NoteApp" ng-controller="NoteCtrl">
+		<div id="main" contenteditable="true">
+			Hello, World!
+		</div>
+		<i id="save" class="material-icons md-18" ng-click="save()">save</i>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		        crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="/javascripts/app.js"></script>
+	</body>
 </html>

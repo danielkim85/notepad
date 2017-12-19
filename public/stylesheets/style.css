@@ -1,3 +1,15 @@
 body{
-    background-color:#ccc;
+	background-color:#323232;
+	color:white;
+	margin:15px;
+}
+
+#main{
+	outline:0px;
+}
+#save{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	cursor:pointer;
 }
