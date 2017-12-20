@@ -32,7 +32,6 @@
       var text = medium.value();
       var lastSaved = parseInt(localStorage.getItem("note.soulkast.com:lastSaved"));
       if(isNaN(lastSaved)|| lastEdited > lastSaved){
-        console.info('i am saving');
         localStorage.setItem('note.soulkast.com:text', text);
         localStorage.setItem("note.soulkast.com:lastSaved",lastEdited);
       }
