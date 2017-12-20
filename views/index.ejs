@@ -3,14 +3,20 @@
 	<head>
 		<title><%= title %></title>
 		<link rel="shortcut icon" href="http://soulkast.com/img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="/medium/medium.css">
 		<link rel='stylesheet' href='/stylesheets/style.css' />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 	<body ng-app="NoteApp" ng-controller="NoteCtrl">
 
-		<div id="main" contenteditable="true"></div>
+		<div id="main"></div>
+
 		<i id="save" class="material-icons md-18" ng-click="save()">save</i>
 
+		<script src="/medium/rangy-core.min.js"></script>
+		<script src="/medium/rangy-classapplier.min.js"></script>
+		<script src="/medium/undo.js"></script>
+		<script src="/medium/medium.min.js"></script>
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"
 		        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 		        crossorigin="anonymous"></script>
