@@ -19,7 +19,7 @@
     }
 
     window.onbeforeunload = function() {
-      $scope.save();
+      $scope.save(false);
       return undefined;
     };
 
@@ -28,10 +28,10 @@
       lastEdited = (new Date).getTime();
     });
 
-    $scope.save = function(){
+    $scope.save = function(direct){
       var text = medium.value();
       var lastSaved = parseInt(localStorage.getItem("note.soulkast.com:lastSaved"));
-      if(isNaN(lastSaved)|| lastEdited > lastSaved){
+      if(direct || (isNaN(lastSaved)|| lastEdited > lastSaved)){
         localStorage.setItem('note.soulkast.com:text', text);
         localStorage.setItem("note.soulkast.com:lastSaved",lastEdited);
       }
