@@ -1,6 +1,6 @@
 (function() {
+
   var main = document.getElementById('main'),
-    container = main.parentNode,
     medium = new Medium({
       element: main,
       mode: Medium.richMode,
@@ -9,6 +9,7 @@
       tags: null
     });
 
+  // noinspection Annotator
   var app = angular.module('NoteApp', []);
 
   app.controller('NoteCtrl', function($scope) {

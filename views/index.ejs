@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><%= title %></title>
+		<title>Simple Notepad</title>
 		<link rel="shortcut icon" href="http://soulkast.com/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/medium/medium.css">
 		<link rel='stylesheet' href='/stylesheets/style.css' />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
-	<body ng-app="NoteApp" ng-controller="NoteCtrl">
+	<body data-ng-app="NoteApp" data-ng-controller="NoteCtrl">
 
 		<div id="main"></div>
 
-		<i id="save" class="material-icons md-18" ng-click="save(true)">save</i>
+		<i id="save" class="material-icons md-18" data-ng-click="save(true)">save</i>
 
 		<script src="/medium/rangy-core.min.js"></script>
 		<script src="/medium/rangy-classapplier.min.js"></script>
